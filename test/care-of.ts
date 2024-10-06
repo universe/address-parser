@@ -115,7 +115,6 @@ const FIXTURES: Fixtures = {
 
 describe('"Care Of" Business Addresses', () => {
   for (const addr of Object.keys(FIXTURES)) {
-    /* eslint-disable-next-line jest/expect-expect */
     it(`${`${addr}`.replace(/\n/g, ', ')}`, () => {
       compare(addr, FIXTURES[addr]);
     });

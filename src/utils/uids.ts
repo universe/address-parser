@@ -1,8 +1,7 @@
+import { Country, ISitus } from '@universe/models';
 import * as crypto from 'crypto';
 
-import { Country, ISitus } from '@universe/models';
-
-const md5 = (value: string) => crypto.createHash('md5').update(value).digest("hex")
+const md5 = (value: string) => crypto.createHash('md5').update(value).digest("hex");
 
 const CACHE: Map<string, string> = new Map();
 export function hash(addr: Partial<ISitus>): string {

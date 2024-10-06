@@ -61,7 +61,6 @@ const FIXTURES: Record<string, Partial<USPSLabel>> = {
 
 describe('Addresses Label Street Type Order', () => {
   for (const addr of Object.keys(FIXTURES)) {
-    /* eslint-disable-next-line jest/expect-expect */
     it(`${`${addr}`.replace(/\n/g, ', ')}`, () => {
       compareLabel(addr, FIXTURES[addr]);
     });

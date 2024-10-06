@@ -1,0 +1,12 @@
+node_modules/**
+**/node_modules/**
+/node_modules/microevent.ts/
+/node_modules/
+node_modules
+dist
+types-local
+graphql.ts
+packages/@universe/aether/cjs/**
+packages/@universe/aether/esm/**
+packages/@universe/campaign/esm/**
+**/*.spec.tsx

@@ -99,7 +99,6 @@ describe('Military Address Parser', () => {
       continue;
     }
 
-    /* eslint-disable-next-line jest/expect-expect */
     it(`${`${addr}`.replace(/\n/g, ', ')}`, () => {
       compare(addr, FIXTURES[addr]);
     });

@@ -161,9 +161,9 @@ describe('CASS 1 Tests Series N', () => {
   while ((line = readline.next()) !== false) {
     const out = parse<CASSTest>(line.toString(), CASS_SLICER);
     if (process.env.CASS_SUITE !== 'enabled') { break; }
-    if (enabled.size && !enabled.has(out.id)) { continue; };
-    /* eslint-disable-next-line jest/expect-expect */
-    it(`Passes CASS 1 Test Certification: Line ${i++} #${out.id}: ${[ out.firmInput, out.urbanizationInput, out.line1Input, out.line2Input, out.lastLineInput ].filter(Boolean).join(', ')}`, () => {
+    if (enabled.size && !enabled.has(out.id)) { continue; }
+    const input = [ out.firmInput, out.urbanizationInput, out.line1Input, out.line2Input, out.lastLineInput ].filter(Boolean).join(', ');
+    it(`Passes CASS 1 Test Certification: Line ${i++} #${out.id}: ${input}`, () => {
       // console.log(out);
       compareLabel([ out.firmInput, out.urbanizationInput, out.line1Input, out.line2Input, out.lastLineInput ], {
         care: out.firmNameAnswer || null,

@@ -160,7 +160,6 @@ const FIXTURES: Fixtures = {
 
 describe('PIN Numbers', () => {
   for (const addr of Object.keys(FIXTURES)) {
-    /* eslint-disable-next-line jest/expect-expect */
     it(`${`${addr}`.replace(/\n/g, ', ')}`, () => {
       compare(addr, FIXTURES[addr]);
     });
