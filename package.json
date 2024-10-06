@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": false,
   "type": "module",
-  "repository": "https://github.com/universe/big-blue",
+  "repository": "https://github.com/universe/address-parser",
   "exports": {
     ".": {
       "types": "./dist/src/index.d.ts",
