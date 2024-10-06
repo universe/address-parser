@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "outDir": "dist",
+    "baseUrl": "dist",
+    "lib": [ "ESNext", "dom" ],
+
+    // JSX Settings for Preact
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
+
+    // Compilation Configuration
+    "target": "ESNext",
+    "inlineSources": true,
+    "inlineSourceMap": true,
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+
+    // Environment Configuration
+    "experimentalDecorators": true,
+    "moduleResolution": "NodeNext",
+    "skipLibCheck": true,
+
+    // Enhance Strictness
+    "noImplicitAny": true,
+    "ignoreDeprecations": "5.0",
+    "noUnusedParameters": true,
+    "allowUnreachableCode": false,
+    "strictNullChecks": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": false,
+    "strictFunctionTypes": true,
+    "alwaysStrict": true,
+    "strictPropertyInitialization": true,
+
+    // output options
+    "preserveConstEnums": true,
+    "newLine": "LF",
+    "traceResolution": false,
+    "module": "NodeNext"
+  }
+}
