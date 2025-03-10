@@ -1,6 +1,7 @@
 /* global describe, it */
 import { Country, State, StreetType, UnitAbbr } from '@universe/models';
 
+import { parse } from '../src/index.js';
 import { compare, Fixtures } from './_util.js';
 
 const FIXTURES: Fixtures = {
@@ -83,4 +84,10 @@ describe('Foreign Addresses', () => {
       compare(addr, FIXTURES[addr]);
     });
   }
+});
+
+describe.only('Empty value', () => {
+  const val = '';
+  const situs = parse(...val);
+  console.log(situs);
 });
