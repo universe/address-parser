@@ -244,6 +244,7 @@ function isForeignAddress(head: Head, out: WorkingSitus): boolean {
 
   let countryTest = '';
   while (pointer !== head) {
+    console.log('Loop');
     if (isHead(pointer)) { break; } // Mostly for Typescript
     if (isNewlineSep(pointer)) { break; }
     countryTest = [ pointer.value, countryTest ].filter(Boolean).join(' ');
