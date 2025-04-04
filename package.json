@@ -12,8 +12,10 @@
   "exports": {
     ".": {
       "types": "./dist/src/index.d.ts",
-      "import": "./dist/src/index.js"
-    }
+      "import": "./dist/src/index.js",
+      "require": "./dist/src/index.js"
+    },
+    "./bin": "./bin/index.js"
   },
   "bin": {
     "address-parser": "./bin/index.js"
